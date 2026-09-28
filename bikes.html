@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Bikes - MotoVerse</title>
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+<a href="index.html" class="logo">🏍️ Moto<span>Verse</span></a>
+<nav id="navbar"><a href="index.html">Home</a><a href="bikes.html" class="active">Bikes</a><a href="wallpapers.html">Wallpapers</a><a href="destinations.html">Destinations</a><a href="blog.html">Blog</a><a href="about.html">About</a></nav>
+<div class="header-actions"><button id="themeBtn" class="icon-btn">🌙</button><a href="wishlist.html" class="wishlist-link">❤️ <span id="wishlistCount">0</span></a><a href="login.html" class="login-btn">Login</a><button id="menuBtn" class="menu-btn">☰</button></div>
+</header>
+<section class="page-header"><h1>Explore Bikes</h1><p>Discover motorcycles from different categories and manufacturers.</p></section>
+<section class="section">
+<div class="filter-area">
+<input type="text" id="searchInput" placeholder="🔍 Search bike name...">
+<select id="categoryFilter"><option value="All">All Categories</option><option value="Sports">Sports</option><option value="Cruiser">Cruiser</option><option value="Adventure">Adventure</option><option value="Naked">Naked</option><option value="Classic">Classic</option></select>
+<select id="brandFilter"><option value="All">All Brands</option><option value="Yamaha">Yamaha</option><option value="Ducati">Ducati</option><option value="BMW">BMW</option><option value="Kawasaki">Kawasaki</option><option value="Honda">Honda</option><option value="Royal Enfield">Royal Enfield</option><option value="KTM">KTM</option></select>
+</div>
+<div id="bikeContainer" class="bike-grid"></div>
+</section>
+<footer><div class="copyright">© 2026 MotoVerse</div></footer>
+<script src="js/data.js"></script><script src="js/main.js"></script><script src="js/bikes.js"></script>
+</body>
+</html>

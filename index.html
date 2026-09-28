@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MotoVerse - Explore The World Of Bikes</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+<a href="index.html" class="logo">🏍️ Moto<span>Verse</span></a>
+<nav id="navbar">
+<a href="index.html" class="active">Home</a><a href="bikes.html">Bikes</a><a href="wallpapers.html">Wallpapers</a>
+<a href="destinations.html">Destinations</a><a href="blog.html">Blog</a><a href="about.html">About</a>
+</nav>
+<div class="header-actions">
+<button id="themeBtn" class="icon-btn">🌙</button>
+<a href="wishlist.html" class="wishlist-link">❤️ <span id="wishlistCount">0</span></a>
+<a href="login.html" class="login-btn">Login</a>
+<button id="menuBtn" class="menu-btn">☰</button>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="hero-content">
+<p class="hero-small">WELCOME TO MOTOVERSE</p>
+<h1>Explore The World's <span>Greatest Bikes</span></h1>
+<p>Discover legendary motorcycles, explore amazing riding destinations, read bike stories and save your favourite bikes to your personal wishlist.</p>
+<div class="hero-buttons">
+<a href="bikes.html" class="btn primary-btn">Explore Bikes →</a>
+<a href="wallpapers.html" class="btn secondary-btn">View Wallpapers</a>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-title"><p>DISCOVER</p><h2>Popular Bike Categories</h2><span>Find the perfect motorcycle for your riding style.</span></div>
+<div class="category-grid">
+<a href="bikes.html?category=Sports" class="category-card"><div>🏁</div><h3>Sports Bikes</h3><p>Speed, performance and racing technology.</p></a>
+<a href="bikes.html?category=Cruiser" class="category-card"><div>🛣️</div><h3>Cruiser Bikes</h3><p>Relaxed riding and long-distance journeys.</p></a>
+<a href="bikes.html?category=Adventure" class="category-card"><div>🏔️</div><h3>Adventure Bikes</h3><p>Built for roads, mountains and exploration.</p></a>
+<a href="bikes.html?category=Naked" class="category-card"><div>⚡</div><h3>Naked Bikes</h3><p>Raw performance with aggressive styling.</p></a>
+</div>
+</section>
+
+<section class="section featured-section">
+<div class="section-title"><p>FEATURED</p><h2>Popular Motorcycles</h2><span>Explore some of the world's most recognised bikes.</span></div>
+<div id="featuredBikes" class="bike-grid"></div>
+<div class="center"><a href="bikes.html" class="btn primary-btn">View All Bikes →</a></div>
+</section>
+
+<section class="destination-banner">
+<div>
+<p>RIDE. EXPLORE. EXPERIENCE.</p>
+<h2>Discover Incredible Riding Destinations</h2>
+<p>From Himalayan mountain roads to coastal highways, discover places every motorcycle enthusiast should experience.</p>
+<a href="destinations.html" class="btn primary-btn">Explore Destinations</a>
+</div>
+</section>
+
+<section class="section">
+<div class="section-title"><p>LATEST STORIES</p><h2>From The MotoVerse Blog</h2></div>
+<div id="homeBlogs" class="blog-grid"></div>
+</section>
+</main>
+
+<footer>
+<div class="footer-content">
+<div><h2>🏍️ MotoVerse</h2><p>Your digital destination for motorcycles, wallpapers, destinations and bike stories.</p></div>
+<div><h3>Quick Links</h3><a href="bikes.html">Bikes</a><a href="wallpapers.html">Wallpapers</a><a href="destinations.html">Destinations</a><a href="blog.html">Blog</a></div>
+<div><h3>Account</h3><a href="login.html">Login</a><a href="register.html">Register</a><a href="wishlist.html">Wishlist</a></div>
+</div>
+<div class="copyright">© 2026 MotoVerse. Created for Web Application Development Project.</div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>
+bikes.slice(0, 6).forEach(bike => featuredBikes.innerHTML += createBikeCard(bike));
+blogs.slice(0, 3).forEach(blog => homeBlogs.innerHTML += createBlogCard(blog));
+</script>
+</body>
+</html>
