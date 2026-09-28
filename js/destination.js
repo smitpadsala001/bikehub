@@ -1,0 +1,2 @@
+const destinationContainer=document.getElementById("destinationContainer");
+destinations.forEach(place=>{destinationContainer.innerHTML+=`<article class="destination-card"><img src="${place.image}" alt="${place.name}"><div class="destination-content"><span>📍 ${place.location}</span><h2>${place.name}</h2><p>${place.description}</p><h3>Things To Do</h3><ul>${place.activities.map(activity=>`<li>✓ ${activity}</li>`).join("")}</ul></div></article>`;});
